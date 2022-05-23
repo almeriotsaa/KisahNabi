@@ -3,7 +3,7 @@ package com.almerio.kisah25nabi.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.almerio.kisah25nabi.data.KisahResponse
-import com.yoenas.kisah25nabi.data.network.ApiClient
+import com.almerio.kisah25nabi.data.network.ApiClient
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
 
@@ -25,8 +25,9 @@ class MainViewModel : ViewModel() {
     }
 
     fun getKisahNabi() {
+        isLoading.value = true
         getData({
-            isLoading.value = true
+            isLoading.value = false
             kisahResponse.value = it
         }, {
             isLoading.value = false

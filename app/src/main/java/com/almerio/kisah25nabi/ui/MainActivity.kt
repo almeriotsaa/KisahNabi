@@ -43,10 +43,10 @@ class MainActivity : AppCompatActivity() {
             layoutManager = GridLayoutManager(this@MainActivity, 2)
             adapter = mAdapter
             mAdapter.setOnItemClickCallback(object : OnItemClickCallback {
-                override fun onItemClicked(data: KisahResponse) {
+                override fun onItemClicked(item: KisahResponse) {
                     startActivity(
                         Intent(this@MainActivity, DetailActivity::class.java)
-                            .putExtra("EXTRA_DATA", data)
+                            .putExtra(DetailActivity.EXTRA_DATA, item)
                     )
                 }
             })

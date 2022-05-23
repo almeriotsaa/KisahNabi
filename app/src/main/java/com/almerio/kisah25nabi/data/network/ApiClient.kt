@@ -1,6 +1,7 @@
-package com.yoenas.kisah25nabi.data.network
+package com.almerio.kisah25nabi.data.network
 
-import com.yoenas.kisah25nabi.BuildConfig
+import com.almerio.kisah25nabi.BuildConfig
+import com.almerio.kisah25nabi.data.network.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
