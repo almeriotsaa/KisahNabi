@@ -25,7 +25,7 @@ class DetailActivity : AppCompatActivity() {
             binding.apply {
                 Glide.with(this@DetailActivity).load(data.imageUrl).into(detailImage)
                 detailNama.text = data.name
-                val tahun = "Tahun Kelahiran: " + data.thnKelahiran
+                val tahun = "   Tahun Kelahiran: " + data.thnKelahiran
                 detailTahun.text = tahun
                 detailTempat.text = data.tmp
                 val usia = "Usia: " + data.usia + " tahun"
